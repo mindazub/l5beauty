@@ -9,6 +9,8 @@
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
         rel="stylesheet">
+  <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+  
   @yield('styles')
 
   <!--[if lt IE 9]>

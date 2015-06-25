@@ -11,9 +11,20 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicExample()
+    public function tests_blog_page()
     {
-        $this->visit('/')
-             ->see('Laravel 5');
+        $this->visit('/blog')
+             ->see('My Blog')
+             ->see('Page');
     }
+
+
+    public function tests_admin_redirects_to_auth_login()
+    {
+        $this->visit('/admin')
+            ->assertResponseOk()
+            ->assertRedirectedTo('/auth/login'); 
+    }
+    
+    
 }
