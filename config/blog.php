@@ -3,6 +3,4 @@ return [
     'title' => 'My Blog',
     'posts_per_page' => 10
 
-
-    
 ];
